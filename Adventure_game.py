@@ -18,7 +18,8 @@ def play_again():
     third_choice = valid_input(
         "Would you like to play again? (y/n)", ["y", "n"])
     if third_choice == "y":
-        print_sleep("You're an amazing warrior. Let's see what is your next adventure...", 2)
+        print_sleep("You're an amazing warrior.\
+             Let's see what is your next adventure...", 2)
     elif third_choice == "n":
         print_sleep("See you next time, Great Warrior!", 2)
         exit(0)
@@ -95,6 +96,7 @@ def peer_in_cave(weapon):
     print_sleep("You walk back out to the field.\n", 2)
     return weapon
 
+
 def intro(monster):
     print_sleep("You find yourself standing in an open field, filled with "
                 "grass and yellow wildflowers.", 2)
@@ -132,3 +134,5 @@ def adventure_game():
         play_again()
 
 
+if __name__ == '__main__':
+    adventure_game()
